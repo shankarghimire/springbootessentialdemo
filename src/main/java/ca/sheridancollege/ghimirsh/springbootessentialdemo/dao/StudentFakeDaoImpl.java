@@ -1,9 +1,11 @@
 package ca.sheridancollege.ghimirsh.springbootessentialdemo.dao;
 
 import ca.sheridancollege.ghimirsh.springbootessentialdemo.model.Student;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+@Repository("studentFakeDao")
 public class StudentFakeDaoImpl  implements  StudentDao{
     private final Map<UUID, Student> studentDatabase;
 
